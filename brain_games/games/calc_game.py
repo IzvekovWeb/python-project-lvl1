@@ -1,11 +1,13 @@
+from brain_games.is_int import is_int
 import random
 
 
 def play_calc_game(name):
     """Brain-calc
 
-        Cуть игры в следующем: пользователю показывается случайное математическое выражение, 
-        например 35 + 16, которое нужно вычислить и записать правильный ответ.
+        Cуть игры в следующем: пользователю показывается случайное
+        математическое выражение,например 35 + 16, которое нужно
+        вычислить и записать правильный ответ.
     """
     operators = ('+', '-', '*')
     win = 0
@@ -17,18 +19,12 @@ def play_calc_game(name):
             correct_answer = rand_values[0] + rand_values[1]
         elif operators[rand_operation_index] == '-':
             correct_answer = rand_values[0] - rand_values[1]
-        elif operators[rand_operation_index] == '*':
+        else:
             correct_answer = rand_values[0] * rand_values[1]
 
-        print(f'Question: {rand_values[0]} {operators[rand_operation_index]} {rand_values[1]}')
+        print(f'Question: {rand_values[0]} \
+            {operators[rand_operation_index]} {rand_values[1]}')
         answer = input('Your answer: ')
-
-        def is_int(str):
-            try:
-                int(str)
-                return True
-            except ValueError:
-                return False
 
         if not is_int(answer) or int(answer) != correct_answer:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n \
