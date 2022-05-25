@@ -9,11 +9,11 @@ def play_gcd_game(name):
         например, 25 50. Пользователь должен вычислить и ввести наибольший
         общий делитель этих чисел.
     """
+    print('Find the greatest common divisor of given numbers.')
     win = 0
     while win < 3:
         rand_values = [random.randint(0, 100), random.randint(0, 100)]
 
-        print('Find the greatest common divisor of given numbers.')
         print(f'Question: {rand_values[0]} {rand_values[1]}')
         answer = input('Your answer: ')
 
