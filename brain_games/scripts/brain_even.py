@@ -2,8 +2,6 @@ from brain_games.cli import welcome_user
 from brain_games.even_game import play_even_game
 
 
-    
-
 def main():
     """Brain-even main"""
 

@@ -16,7 +16,8 @@ def play_even_game(name):
         print(f'Question: {rand_int}')
         answer = input('Your answer: ')
         if answer != correct_answer:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n \
+                Let's try again, {name}!")
             break
         else:
             print('Correct!')
