@@ -10,6 +10,9 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
+lint:
+	poetry run flake8 brain_games
+
 build:
 	poetry build
 	
@@ -19,8 +22,6 @@ test:
 test-coverage:
 	poetry run pytest --cov=python-project-lvl1 --cov-report xml
 
-lint:
-	poetry run flake8 python-project-lvl1
 
 selfcheck:
 	poetry check
