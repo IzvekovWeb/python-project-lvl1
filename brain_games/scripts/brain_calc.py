@@ -3,7 +3,7 @@ from brain_games.games.calc_game import play_calc_game
 
 
 def main():
-    """Brain-even main"""
+    """Brain-calc main"""
 
     user_name = welcome_user()
     play_calc_game(user_name)

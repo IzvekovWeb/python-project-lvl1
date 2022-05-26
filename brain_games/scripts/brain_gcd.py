@@ -3,7 +3,7 @@ from brain_games.games.gcd_game import play_gcd_game
 
 
 def main():
-    """Brain-even main"""
+    """Brain-gcd main"""
 
     user_name = welcome_user()
     play_gcd_game(user_name)

@@ -3,7 +3,7 @@ from brain_games.games.progression_game import play_progression_game
 
 
 def main():
-    """Brain-even main"""
+    """Brain-progression main"""
 
     user_name = welcome_user()
     play_progression_game(user_name)
