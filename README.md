@@ -2,6 +2,10 @@
 [![Actions Status](https://github.com/IzvekovWeb/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/IzvekovWeb/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/850005fcf2ba21785f45/maintainability)](https://codeclimate.com/github/IzvekovWeb/python-project-lvl1/maintainability)
 
+![python](https://img.shields.io/badge/python-%3E%3D3.8-brightgreen)
+![pip](https://img.shields.io/badge/pip-%3E%3D20-blue)
+![GitHub](https://img.shields.io/github/license/IzvekovWeb/python-project-lvl1) 
+
 # Проект "Игры разума"
 
 Проект включает в себя 7 консольных игр.
@@ -43,7 +47,3 @@
 [![asciicast](https://asciinema.org/a/W5OKjDezUvQ33JJCCypoVKyzc.svg)](https://asciinema.org/a/W5OKjDezUvQ33JJCCypoVKyzc)
 ### Игра "Простое ли число?"
 [![asciicast](https://asciinema.org/a/pyudhuKj5PJ2Bsky0Xas44pV8.svg)](https://asciinema.org/a/pyudhuKj5PJ2Bsky0Xas44pV8)
-
-## Минимальные требования
-
-![GitHub](https://img.shields.io/github/license/IzvekovWeb/python-project-lvl1)
