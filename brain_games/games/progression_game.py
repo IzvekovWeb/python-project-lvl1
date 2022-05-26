@@ -1,4 +1,4 @@
-from brain_games.is_int import is_int
+from brain_games.check_answer import check_answer
 import random
 
 
@@ -11,7 +11,7 @@ def play_progression_game(name):
     """
 
     win = 0
-    while win < 3:
+    while win < 3 and win != -1:
 
         p_length = random.randint(5, 11)
         p_start = random.randint(1, 10)
@@ -29,12 +29,4 @@ def play_progression_game(name):
         print(f'Question: {" ".join(str(x) for x in progression)}')
         answer = input('Your answer: ')
 
-        if not is_int(answer) or int(answer) != correct_answer:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n \
-                Let's try again, {name}!")
-            break
-        else:
-            print('Correct!')
-            win += 1
-        if win == 3:
-            print(f'Congratulations, {name}!')
+        win = check_answer(name, answer, correct_answer, win, must_be_int=True)

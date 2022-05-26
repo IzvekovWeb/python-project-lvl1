@@ -1,4 +1,4 @@
-from brain_games.is_int import is_int
+from brain_games.check_answer import check_answer
 import random
 
 
@@ -12,23 +12,15 @@ def play_gcd_game(name):
     """
     print('Find the greatest common divisor of given numbers.')
     win = 0
-    while win < 3:
+    while win < 3 and win != -1:
+
         rand_values = [random.randint(0, 100), random.randint(0, 100)]
+        correct_answer = find_nod(rand_values[0], rand_values[1])
 
         print(f'Question: {rand_values[0]} {rand_values[1]}')
         answer = input('Your answer: ')
 
-        correct_answer = find_nod(rand_values[0], rand_values[1])
-
-        if not is_int(answer) or int(answer) != correct_answer:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n \
-                Let's try again, {name}!")
-            break
-        else:
-            print('Correct!')
-            win += 1
-        if win == 3:
-            print(f'Congratulations, {name}!')
+        win = check_answer(name, answer, correct_answer, win, must_be_int=True)
 
 
 def find_nod(x, y):

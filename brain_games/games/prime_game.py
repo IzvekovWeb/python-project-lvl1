@@ -1,3 +1,4 @@
+from brain_games.check_answer import check_answer
 import random
 
 
@@ -11,7 +12,7 @@ def play_prime_game(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     win = 0
-    while win < 3:
+    while win < 3 and win != -1:
 
         value = random.randint(0, 101)
         correct_answer = 'yes' if is_prime(value) else 'no'
@@ -19,15 +20,7 @@ def play_prime_game(name):
         print(f'Question: {value}')
         answer = input('Your answer: ')
 
-        if answer != correct_answer:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n \
-                Let's try again, {name}!")
-            break
-        else:
-            print('Correct!')
-            win += 1
-        if win == 3:
-            print(f'Congratulations, {name}!')
+        win = check_answer(name, answer, correct_answer, win, must_be_int=False)
 
 
 def is_prime(n):
