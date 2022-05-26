@@ -1,28 +1,7 @@
-name: Make Poetry Badges
-on:
-  push:
-    branches: [main]
-
+name: Test Linter
+on: [push]
 jobs:
-  build:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          branch-name: badges
-
-      - name: Make version Badge
-        uses: action-badges/poetry-badges@0.2.2
-        with:
-          file-name: poetry-version.svg
-          badge-branch: badges
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
-          integration: version
-
-      - name: Make license badge
-        uses: action-badges/poetry-badges@0.2.2
-        with:
-          file-name: poetry-license.svg
-          badge-branch: badges
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
-          integration: license
+      - run: make lint
