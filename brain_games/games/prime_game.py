@@ -4,7 +4,11 @@ import random
 def play_prime_game(name):
     """Brain-prime
 
+<<<<<<< HEAD
     According to the player's idea, the number that he must guess simply or not.
+=======
+    Показываем игроку число, он должен угадать простое оно или нет
+>>>>>>> f0a82672f0ea7fc6f49491437551e2bc323d5352
 
     """
 
