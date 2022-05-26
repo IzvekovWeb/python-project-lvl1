@@ -6,6 +6,8 @@ authors = ["Alexander Izvekov <izvekov.web@yandex.ru>"]
 packages = [
   { include = "brain_games" },
 ]
+license = 'MIT'
+readme = "README.md"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
