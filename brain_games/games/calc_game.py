@@ -23,7 +23,8 @@ def play_calc_game(name):
             correct_answer = rand_values[0] * rand_values[1]
 
         print(f'Question: {rand_values[0]} \
-            {operators[rand_operation_index]} {rand_values[1]}')
+{operators[rand_operation_index]} {rand_values[1]}')
+
         answer = input('Your answer: ')
 
         if not is_int(answer) or int(answer) != correct_answer:
