@@ -4,7 +4,8 @@ from random import random
 def play_even_game(name):
     """Brain-even
 
-        Answer "yes" if the number is even, otherwise answer "no".
+    Answer "yes" if the number is even, otherwise answer "no".
+
     """
 
     print('Answer "yes" if the number is even, otherwise answer "no".')

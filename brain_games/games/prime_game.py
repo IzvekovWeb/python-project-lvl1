@@ -4,7 +4,8 @@ import random
 def play_prime_game(name):
     """Brain-prime
 
-        Показываем игроку число, он должен угадать простое оно или нет
+    Показываем игроку число, он должен угадать простое оно или нет
+
     """
 
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
