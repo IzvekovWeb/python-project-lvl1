@@ -1,7 +1,23 @@
 name: Test Linter
-on: [push]
+
+on:
+  push:
+      branches:
+        - '**'
+      tags:
+        - '**'
+
 jobs:
-  Explore-GitHub-Actions:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
+      - uses: actions/checkout@v2
+
+      - name: Install python
+        uses: actions/setup-puthon@v2
+        with:
+          python-version: 3.8
+      - name: Install
+        run: make install
+      - name: Run Lint
+        run: make lint
