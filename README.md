@@ -12,5 +12,7 @@
 [![asciicast](https://asciinema.org/a/wKzorZteURYkifdDKimnE08Ir.svg)](https://asciinema.org/a/wKzorZteURYkifdDKimnE08Ir)
 ### Игра: "НОД"
 [![asciicast](https://asciinema.org/a/oU7OluLsZYTZlmJbvh8JssTOX.svg)](https://asciinema.org/a/oU7OluLsZYTZlmJbvh8JssTOX)
-Игра "Арифметическая прогрессия"
+### Игра "Арифметическая прогрессия"
 [![asciicast](https://asciinema.org/a/W5OKjDezUvQ33JJCCypoVKyzc.svg)](https://asciinema.org/a/W5OKjDezUvQ33JJCCypoVKyzc)
+### Игра "Простое ли число?"
+[![asciicast](https://asciinema.org/a/pyudhuKj5PJ2Bsky0Xas44pV8.svg)](https://asciinema.org/a/pyudhuKj5PJ2Bsky0Xas44pV8)
