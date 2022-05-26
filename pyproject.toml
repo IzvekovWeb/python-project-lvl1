@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "IzvekovWeb_project_1"
+name = "hexlet-code"
 version = "0.1.4"
 description = "Игры разума"
 authors = ["Alexander Izvekov <izvekov.web@yandex.ru>"]
