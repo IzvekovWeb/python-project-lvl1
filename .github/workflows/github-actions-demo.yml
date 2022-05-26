@@ -18,6 +18,6 @@ jobs:
         with:
           python-version: 3.8
       - name: Install
-        run: make install
+        run: poetry install
       - name: Run Lint
-        run: make lint
+        run: poetry run flake8 brain_games
